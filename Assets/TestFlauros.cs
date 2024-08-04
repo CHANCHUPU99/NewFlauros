@@ -217,32 +217,111 @@ public class TestFlauros : MonoBehaviour
         };
 
         Vector2[] uvs = {
-            new Vector2(0.289f, 0.099f),  // Vértice 0
-            new Vector2(0.201f, 0.199f),  // Vértice 1
-            new Vector2(0.377f, 0.199f),  // Vértice 2
-            new Vector2(0.679f, 0.447f),  // Vértice 3
-            new Vector2(0.591f, 0.547f),  // Vértice 4
-            new Vector2(0.767f, 0.547f),  // Vértice 5
-            new Vector2(0.201f, 0.646f),  // Vértice 6
-            new Vector2(0.113f, 0.746f),  // Vértice 7
-            new Vector2(0.289f, 0.746f),  // Vértice 8
-            new Vector2(0.491f, 0.348f),  // Vértice 9
-            new Vector2(0.403f, 0.447f),  // Vértice 10
-            new Vector2(0.579f, 0.447f),  // Vértice 11
-        };
+            /////A izquierda
+        new Vector2(0.161f, 0.044f), //0
+    new Vector2(0.411f, 0.042f), //1
+    new Vector2(0.284f, 0.213f), //2
+    ///////////////////////////////// A der
+     new Vector2(0.411f, 0.042f), //3
+    new Vector2(0.663f, 0.041f), //4
+    new Vector2(0.535f, 0.214f), //5
+    /////////////////////////////////////A abjo
+   new Vector2(0.284f, 0.213f), //6
+    new Vector2(0.535f, 0.214f), //7
+    new Vector2(0.409f, 0.384f), //8
+    ////////////////////////////////A centro
+    new Vector2(0.284f, 0.213f), //9
+     new Vector2(0.411f, 0.042f), //10
+   new Vector2(0.535f, 0.214f), //11
 
-        /*Mesh mesh = GetComponent<MeshFilter>().mesh;
-        mesh.Clear();
-        mesh.vertices = vertices;
-        mesh.triangles = triangles;
-        mesh.uv = uvs;
-        mesh.Optimize();
-        mesh.RecalculateNormals();
+    //////////////////////////////////////////////incia D triangulo izquierda abajo
+    new Vector2(0.014f, 0.570f), //12
+    new Vector2(0.140f, 0.401f), //13
+    new Vector2(0.264f, 0.572f), //14
+    //////////////////////////////////////////////D arriba
+     new Vector2(0.140f, 0.401f), //15
+    new Vector2(0.265f, 0.230f), //16
+    new Vector2(0.381f, 0.401f), //17
+    //////////////////////////////////////D der abaj
+    new Vector2(0.264f, 0.572f), //18
+    new Vector2(0.381f, 0.401f), //19
+    new Vector2(0.515f, 0.572f), //20
+    ///////////////////////////////////////D centro
+   new Vector2(0.140f, 0.401f), //21
+    new Vector2(0.381f, 0.401f), //22
+    new Vector2(0.264f, 0.572f), //23
 
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-        Material material = new Material(Shader.Find("Standard"));
-        material.mainTexture = meshT;
-        meshRenderer.material = material;*/
+    //////////////////////////////// C izq arriba
+    new Vector2(0.052f, 0.610f), //24
+    new Vector2(0.298f, 0.608f), //25
+    new Vector2(0.174f, 0.781f), //26
+    //////////////////////////////////////C abaj
+    new Vector2(0.174f, 0.781f), //27
+    new Vector2(0.426f, 0.781f), //28
+    new Vector2(0.301f, 0.951f), //29
+    ///////////////////////////////C der
+    new Vector2(0.298f, 0.608f), //30
+    new Vector2(0.550f, 0.611f), //31
+     new Vector2(0.426f, 0.781f), //32
+    //////////////////////////////C centro
+    new Vector2(0.174f, 0.781f), //33
+    new Vector2(0.298f, 0.608f), //34
+     new Vector2(0.426f, 0.781f), //35
+
+
+    //////////////////////////////////// punto izq abajo
+    new Vector2(0.356f, 0.957f), //36
+    new Vector2(0.482f, 0.788f), //37
+    new Vector2(0.606f, 0.957f), //38
+    ////////////////////////////////////punto arriba
+    new Vector2(0.482f, 0.788f), //39
+    new Vector2(0.607f, 0.619f), //40
+    new Vector2(0.731f, 0.789f), //41
+    /////////////////////////////////////////der abajo
+    new Vector2(0.606f, 0.957f), //42
+    new Vector2(0.731f, 0.789f), //43
+    new Vector2(0.854f, 0.960f), //44
+    //////////////////////////////////////////centro
+    new Vector2(0.482f, 0.788f), //45
+    new Vector2(0.731f, 0.789f), //46
+    new Vector2(0.606f, 0.957f), //47
+
+
+    /////////////////////////////////////////figura arriba derecha de D
+    new Vector2(0.727f, 0.051f), //48
+    new Vector2(0.974f, 0.051f), //49
+    new Vector2(0.848f, 0.223f), //50
+    /////////////////////////////////////figura D
+    new Vector2(0.598f, 0.222f), //51
+    new Vector2(0.727f, 0.051f), //52
+    new Vector2(0.848f, 0.223f), //53
+    ///////////////////////////////////figura abajo D
+    new Vector2(0.598f, 0.222f), //54
+     new Vector2(0.848f, 0.223f), //55
+    new Vector2(0.723f, 0.394f), //56
+    ////////////////////////////////////figura C
+    new Vector2(0.723f, 0.394f), //57
+   new Vector2(0.848f, 0.223f), //58
+    new Vector2(0.973f, 0.394f), //59
+    /////////////////////////////////////figura abajo C
+     new Vector2(0.723f, 0.394f), //60
+    new Vector2(0.973f, 0.394f), //61
+    new Vector2(0.848f, 0.561f), //62
+    ///////////////////////////////////////////figura A
+    new Vector2(0.598f, 0.565f), //63
+     new Vector2(0.723f, 0.394f), //64
+    new Vector2(0.848f, 0.561f), //65
+    ///////////////////////////////////////figura abajo A
+    new Vector2(0.598f, 0.565f), //66
+    new Vector2(0.848f, 0.561f), //67
+    new Vector2(0.722f, 0.737f), //68
+    //////////////////////////////////////////figura B
+    new Vector2(0.722f, 0.737f), //69
+    new Vector2(0.848f, 0.561f), //70
+    new Vector2(0.973f, 0.735f)  //71
+    };
+
+       
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         mesh.Clear();
