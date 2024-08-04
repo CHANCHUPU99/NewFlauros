@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 100216144539654620}
   - component: {fileID: 8227413079012407597}
   - component: {fileID: 7780731553836111813}
-  - component: {fileID: 6342601859673808501}
+  - component: {fileID: 5370371288288517954}
   m_Layer: 0
   m_Name: Flaurous
   m_TagString: Untagged
@@ -60,6 +60,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -98,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshT: {fileID: 2800000, guid: ae0a6ffeeb3af5f42a04dbd345426517, type: 3}
---- !u!114 &6342601859673808501
+--- !u!114 &5370371288288517954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,6 +110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8844091510182186352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6caffee50d57d48ab46c088edeb5f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e5dc5a5a22656d4bb1c41bf66b47d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshT: {fileID: 0}
