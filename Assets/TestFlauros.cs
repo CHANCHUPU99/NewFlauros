@@ -76,7 +76,6 @@ public class TestFlauros : MonoBehaviour
         };
 
         Vector2[] uvs = {
-            // UV coordinates for each vertex
             new Vector2(0.289f, 0.099f),  // Vértice 0
             new Vector2(0.201f, 0.199f),  // Vértice 1
             new Vector2(0.377f, 0.199f),  // Vértice 2
