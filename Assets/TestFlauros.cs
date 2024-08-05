@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TestFlauros : MonoBehaviour
 {
-    public Texture2D meshT;
+    public Material meshT;
     void Start() {
         float size = 1f;
         Vector3[] vertices = {
@@ -32,7 +32,8 @@ public class TestFlauros : MonoBehaviour
 
              new Vector3(5, 0, 0),     //11
 
-             ///////////////////////////////////////////// inicia piramide derecha
+
+             //////////////////////////////////////////// inicia piramide derecha
              new Vector3(5, 0, 0),     //12
 
              new Vector3(7.5f, 5, 2.5f),  //13
@@ -151,7 +152,7 @@ public class TestFlauros : MonoBehaviour
 
                   new Vector3(7.5f, 0, 5),    //70
 
-                  new Vector3(5, 0, 0), //71
+                  new Vector3(5, 0, 0), //71 
                 
                 
                 //derecha abajo
@@ -217,8 +218,8 @@ public class TestFlauros : MonoBehaviour
         };
 
         Vector2[] uvs = {
-            /////A izquierda
-        new Vector2(0.161f, 0.044f), //0
+            //////////////////////////A izquierda
+    new Vector2(0.161f, 0.044f), //0
     new Vector2(0.411f, 0.042f), //1
     new Vector2(0.284f, 0.213f), //2
     ///////////////////////////////// A der
@@ -234,7 +235,7 @@ public class TestFlauros : MonoBehaviour
      new Vector2(0.411f, 0.042f), //10
    new Vector2(0.535f, 0.214f), //11
 
-    //////////////////////////////////////////////incia D triangulo izquierda abajo
+    /////////////////////////////////////////////incia D triangulo izquierda abajo
     new Vector2(0.014f, 0.570f), //12
     new Vector2(0.140f, 0.401f), //13
     new Vector2(0.264f, 0.572f), //14
@@ -318,7 +319,7 @@ public class TestFlauros : MonoBehaviour
     //////////////////////////////////////////figura B
     new Vector2(0.722f, 0.737f), //69
     new Vector2(0.848f, 0.561f), //70
-    new Vector2(0.973f, 0.735f)  //71
+    new Vector2(0.973f, 0.735f)  //71 
     };
 
        
@@ -328,6 +329,8 @@ public class TestFlauros : MonoBehaviour
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.uv = uvs;
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.material = meshT;
         mesh.Optimize();
         mesh.RecalculateNormals();
     }
